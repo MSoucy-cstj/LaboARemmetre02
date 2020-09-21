@@ -1,36 +1,36 @@
-// But: Écrire un programme pour calculer le montant qu’un individu devra 
-// débourser pour faire un voyage dans une automobile louée. 
-// L’algorithme tient compte du kilométrage parcouru et de la durée 
-// du voyage qui sont soumises par le requérant. 
+// But: Ã‰crire un programme pour calculer le montant quâ€™un individu devra 
+// dÃ©bourser pour faire un voyage dans une automobile louÃ©e. 
+// Lâ€™algorithme tient compte du kilomÃ©trage parcouru et de la durÃ©e 
+// du voyage qui sont soumises par le requÃ©rant. 
 // Auteur: Mathieu Soucy
 // Date: 2020-09-14
 
-#include <iostream> //Insertion de la boite à outils
+#include <iostream> //Insertion de la boite Ã  outils
 
 void main() //Le main est en int parce que c'est plus beau, ce n'est pas important.
 {
-	setlocale(LC_ALL, ""); //Ceci permet au programme d'afficher des charactères français.
+	setlocale(LC_ALL, ""); //FR : Ceci permet au programme d'afficher des charactÃ¨res franÃ§ais.
 
-	//Déclaration des variables.
+	//DÃ©claration des variables.
 
-	int km; // Le kilométrage parcouru.
+	int km; // Le kilomÃ©trage parcouru.
 	int jours; // Le nombre de jours du voyage.
 
 	double location; //Le prix total de location.
 	double essence; //Le prix total de l'essence.
 
-	double delennEstPlatePourNommerDesVariables; //Le prix total du voyage, le nom de cette variable n'est pas à questionner.
+	double delennEstPlatePourNommerDesVariables; //Le prix total du voyage, le nom de cette variable n'est pas Ã  questionner.
 
-	std::cout << "Veuillez entrer un nombre entier qui sera le kilométrage parcouru : "; //Message pour demander le premier nombre.
+	std::cout << "Veuillez entrer un nombre entier qui sera le kilomÃ©trage parcouru : "; //Message pour demander le premier nombre.
 
 	std::cin >> km;
 
-	std::cout << "Veuillez entrer  un nombre entier qui sera la durée du voyage en jours : "; //Message pour demander le deuxième nombre.
+	std::cout << "Veuillez entrer  un nombre entier qui sera la durÃ©e du voyage en jours : "; //Message pour demander le deuxiÃ¨me nombre.
 
 	std::cin >> jours;
 
 
-	if (km < 250 * jours) //Calcul du prix de location dépendament de si la limite de 250 par jours est dépassée ou pas.
+	if (km < 250 * jours) //Calcul du prix de location dÃ©pendament de si la limite de 250 par jours est dÃ©passÃ©e ou pas.
 	{
 		location = 45 * jours;
 	}
@@ -44,7 +44,7 @@ void main() //Le main est en int parce que c'est plus beau, ce n'est pas importa
 
 	delennEstPlatePourNommerDesVariables = essence + location; //Calcul du prix total.
 
-	std::cout << "Le prix total du voyage est de " << delennEstPlatePourNommerDesVariables; //Affichage de la réponse.
+	std::cout << "Le prix total du voyage est de " << delennEstPlatePourNommerDesVariables; //Affichage de la rÃ©ponse.
 
 
 }
@@ -54,5 +54,21 @@ KM						250				450				650				10				1900
 JOURS					3				5				8				1				4
 
 
-RÉSULTAT				158.75			267.75			421.75			45.95			405.5
+RÃ‰SULTAT				158.75			267.75			421.75			45.95			405.5
+*/
+
+/*
+â€¢	La solution est bien nommÃ©e et comporte un projet 5/ 5
+â€¢	Les fichiers sources contiennent l'identification complÃ¨te du programme et de son auteur	5/5
+â€¢	Le code source est sans erreur de compilation 15/ 15
+â€¢	Le programme est fonctionnel 20/ 20
+â€¢	Le programme passe le plan de tests 20/ 20
+â€¢	Le code source est largement commentÃ© 20 / 20
+â€¢	La solution est dÃ©posÃ©e dans LEA et dans GitHub.L'adresse est envoyÃ©e via Outlook	10/15
+// KM : Je ne veux pas de .rar, s'il te plait !!!!
+
+
+
+Note 95/100
+Excellent travail !!!
 */
